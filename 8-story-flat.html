@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>OLX - Buy and Sell for free anywhere in Pakistan with OLX online classifieds</title>
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="https://www.olx.com.pk/assets/apple-touch-icon.77341dce2e1fd72b9b227dd2ea0d1930.png">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style type="text/css">
+   .sellImage{
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .sellcentered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border:none;
+      background: none;
+      outline: none;
+
+    }
+    .sellcentered:focus {
+        outline: none;
+    }
+
+    .mainnav{
+      background-color: #f7f8f8;
+    }
+    .input-group-text{
+      background-color: #fff !important;
+
+    }
+    .flip {
+      transform: rotate(-180deg);
+    }
+    .blockinLine{
+      display: inline-block;
+    }
+    .borderBlack{
+      border-color: #000;
+    }
+    .btnLogin:focus{
+      outline: none;
+    }
+    div.dropdown-multicol2{
+      width: 30em;
+    }
+    div.dropdown-multicol2>div.dropdown-col{
+      display:inline-block;
+      width: 32%;
+    }
+    .mainSlide{
+      background-image: url("https://www.olx.com.pk/assets/wallpaper.6416002a042322099dbfec286d7574f4.jpg");
+      height: 252px;
+      background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    }
+    .addimage
+    {
+          background-image:url("https://images.olx.com.pk/thumbnails/167939937-400x300.webp");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    background-color: #000;
+    }
+    .locImage
+    {
+      background-image:url("https://www.online-tech-tips.com/wp-content/uploads/2020/04/Google-Maps-Desktop-Location-Pin.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    }
+    @media screen and (min-width: 1200px) {
+
+      .three-product-slider {
+        display: none;
+      }
+
+      .two-product-slider {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1200px) {
+      .four-product-slider {
+        display: none;
+      }
+
+      .two-product-slider {
+        display: none;
+      }
+
+      .app-text {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .four-product-slider {
+        display: none;
+      }
+
+      .three-product-slider {
+        display: none;
+      }
+
+      .allCategory {
+        display: none;
+      }
+
+      .app-text {
+        display: none;
+      }
+
+      .allCategory {
+        display: none;
+      }
+      .changeAlign{
+        text-align: center !important;
+        margin: 0px !important;
+      }
+      .searchlocation {
+        display: none
+      }
+    }
+
+    @media screen and (max-width: 580px) {
+      .four-product-slider {
+        display: none;
+      }
+
+      .two-product-slider {
+        display: none;
+      }
+
+      .three-product-slider {
+        display: none;
+      }
+
+      .allCategory {
+        display: none;
+      }
+
+      .app-text {
+        display: none;
+      }
+
+      .allCategory {
+        display: none;
+      }
+
+      .searchlocation {
+        display: none;
+      }
+
+      .categoriesBar {
+        display: none;
+      }
+
+      .footerBar {
+        display: none !important;
+      }
+    }
+
+
+    .nav-link {
+      padding-right: 0px !important;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+   </style>
+  </head>
+
+  <body>
+<!-- Header starts here -->
+<div class="header">
+  <nav class="navbar navbar-expand-md navbar-light bg-light" style="padding-top: 4px;padding-bottom: 4px;">
+    <div class="container-xxl mainnav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="blockinLine">
+          <a class="navbar-brand" href="index.html">
+            <img src="https://www.olx.com.pk/assets/logo_noinline.1cdf230e49c0530ad4b8d43e37ecc4a4.svg" alt="no logo">
+          </a>
+        </div>
+        <div class="blockinLine searchlocation" style="width: 272px; min-width: 272px; margin-right:16px;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="input-group" onclick="changeText(this)">
+            <div class="input-group-prepend">
+              <span class="input-group-text  borderBlack">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </span>
+            </div>
+            <input type="text" list="browsers" name="browser" id="browser" class="form-control borderBlack" style="border-left-width: 0px;padding-left: 0px;border-right-width: 0px;padding-top: 0px;padding-bottom: 0px;height: 46px;"
+              placeholder="Search city, area or locality">
+            <div class="input-group-prepend">
+              <span class="input-group-text borderBlack" style="border-left-width: 0px;">
+                <img id="droparrow" src="https://www.olx.com.pk/assets/iconArrowDown_noinline.ec05eae7013321c193965ef15d4e2174.svg" alt="drop arrow">
+              </span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:5px;">
+              <a class="dropdown-item" href="#">Johar Town</a>
+              <a class="dropdown-item" href="#">Sahiwal</a>
+              <a class="dropdown-item" href="#">Modal Town</a>
+              <a class="dropdown-item" href="#">Karachi</a>
+              <a class="dropdown-item" href="#">Islamabad</a>
+            </div>
+          </div>
+        </div>
+        <div class="blockinLine " style="flex: 1;">
+          <div class="input-group">
+            <input type="text" class="form-control borderBlack" style="padding-top: 0px;padding-bottom: 0px;height: 46px" placeholder="Find Cars, Mobile Phones and more...">
+            <div class="input-group-prepend">
+              <button type="button" class="btn btn-dark" name="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="blockinLine">
+          <button class="btn  btnLogin" data-toggle="modal" data-target="#Blogin" style="padding-top: 0px;border: 0px !important; margin-left: 16px; padding-bottom: 0px;height: 46px"><u><b>Login</b></u></button>
+          <!-- this is design of login button modal-->
+          <div class="modal fade" id="Blogin">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <img src="https://www.realxerp.com/images/api_integration/OLX.png" class="rounded-circle mx-auto" width="120" height="120"><br>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <button class="btn btn-outline-dark m-1 p-2" style="width:100% "><svg data-toggle="modal" data-target="#Blogin" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                      <path d="M0 0h24v24H0V0z" fill="none" />
+                      <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+                    </svg> <b>Continue with Phone</b></button>
+                  <button class="btn btn-outline-dark m-1 p-2" style="width:100% "><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                      <rect fill="none" height="24" width="24" />
+                      <path d="M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z" />
+                    </svg>
+                    </span><b> Continue with Facebook</b></button>
+                  <button class="btn btn-outline-dark m-1 p-2" style="width:100% "><svg data-toggle="modal" data-target="#Blogin" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                    </svg> <b>Continue with Google</b></button>
+                  <button class="btn btn-outline-dark m-1 p-2" style="width:100% "><b> Continue with Gmail</b></button>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <p>If you continue, you are accepting<a href="#" style="text-decoration: none;"> OLX Terms and Conditions and Privacy Policy</a></p>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sellImage">
+          <img src="https://www.olx.com.pk/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg" class="img-fluid">
+          <button type="button" class="sellcentered" style="padding-top: 0px;padding-bottom: 0px;height: 46px" name="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z" />
+            </svg>
+            <b style="text-size-adjust:auto;">SELL</b>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- categories header -->
+  <nav class="navbar categoriesBar container-xxl navbar-expand-sm navbar-light bg-white">
+    <ul class="navbar-nav">
+      <li>
+        <div class="allCategory" onclick="changeRotateCategory(this)" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="input-group">
+            <a class="nav-link" href="#" style="color:#000;">All categories</a>
+            <div class="input-group-prepend">
+              <span class="input-group-text borderBlack" style="border-width: 0px;">
+                <img id="droparrowcategory" src="https://www.olx.com.pk/assets/iconArrowDown_noinline.ec05eae7013321c193965ef15d4e2174.svg" alt="drop arrow">
+              </span>
+            </div>
+          </div>
+      </div>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton2" style="list-style-type: none; padding: 25px;">
+          <li>
+            <div class="row" style="font-size: 15px">
+              <div class="col-menu col-md-3">
+                <h6 class="title" style="color: black;">Mobile</h6>
+                <div class="content">
+                  <ul class="menu-col" style="padding-left: 19px">
+                              <li><a href="Tablets.html" style="color: #002f34;">Tablets</a></li>
+                      <li class="nav-item"><a href="Mobile-Phone.html" style="color: #002f34;">Mobile Phone</a></li>
+                    </ul>
+                    <h6 class="title" style="color: black; margin-top: 24px;">Vehicles</h6>
+                    <ul class="menu-col" style="padding-left: 19px">
+            </li>
+            <li class="nav-item"><a href="Cars.html" style="color: #002f34;">Cars</a>
+            <li class="nav-item"><a href="Cars-Accessories.html" style="color: #002f34;">Car Accessories</a></li>
+            <li class="nav-item"><a href="Spare-Parts.html" style="color: #002f34;">Spare parts</a></li>
+            <li class="nav-item"><a href="Boats.html" style="color: #002f34;">Boats</a></li>
+          </ul>
+          <h6 class="title" style="color: black; margin-top: 24px;">Property For Sale
+          </h6>
+          <ul class="menu-col" style="padding-left: 19px">
+            <li class="nav-item"><a href="Houses.html" style="color: #002f34;">Houses</a></li>
+            <li class="nav-item"><a href="Shops.html" style="color: #002f34;">Shops</a></li>
+            <li class="nav-item"><a href="Flats.html" style="color: #002f34;">Flats</a></li>
+        </ul>
+</div>
+</div><!-- end col-3 -->
+<div class="col-menu col-md-3" style="margin-left: none; padding-left: none;">
+  <h6 class="title" style="color: #002f34;">Electronic & Home<br>Appliances</h6>
+  <div class="content">
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="Computers-Accessories.html" style="color: #002f34;">Computer & Asseccories</a></li>
+      <li class="nav-item"><a href="Cameras-Accessories.html" style="color: #002f34;">Camera</a></li>
+      <li class="nav-item"><a href="Games-Entertainment.html" style="color: #002f34;">Games</a></li>
+    </ul>
+    <h6 class="title" style="color: black; margin-top: 24px;">Bikes</h6>
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="Bikes-Motorcycles.html" style="color: #002f34;">Motorcycles</a></li>
+      <li class="nav-item"><a href="Spare-Parts.html" style="color: #002f34;">Spare Parts</a></li>
+      <li class="nav-item"><a href="Bicycles.html" style="color: #002f34;">Bicycles</a></li>
+    </ul>
+    <h6 class="title" style="color: black; margin-top: 24px;">Business, Industry &
+      Agriculture</h6>
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="Food-Restaurants.html" style="color: #002f34;">Food & Resturants</a></li>
+      <li class="nav-item"><a href="Agriculture.html" style="color: #002f34;">Agriculture</a></li>
+      <li class="nav-item"><a href="Medical-Pharma.html" style="color: #002f34;">Medical & Pharma</a></li>
+    </ul>
+  </div>
+</div><!-- end col-3 -->
+<div class="col-menu col-md-3">
+  <h6 class="title" style="color: #002f34;">Animals</h6>
+  <div class="content">
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="#" style="color: #002f34;">Fish & Aquariums</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Birds</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Hens</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Cats</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Dogs</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Livestock</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Horses</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Pet Food</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Pet Asseccories</a></li>
+    </ul>
+    <h6 class="title" style="color: black; margin-top: 24px;">Furniture & Home<br>
+      Decoration</h6>
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="#" style="color: #002f34;">Sofa & Chairs</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Beds & Wardrobes</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Home Decoration</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Tables & Dining</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Garden & outdoor</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Painting & mirrors</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Curtons</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Office Furniture</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Rugs & Carpets</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Other Household Items</a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-menu col-md-3">
+  <h6 class="title" style="color: #002f34;">Fashion & Beauty</h6>
+  <div class="content">
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="#" style="color: #002f34;">Accessories</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Cloths</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Footwear</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Jewellery</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Makeup</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Skin & Hair</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Watches</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Lawen & Pret</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Wedding</a></li>
+    </ul>
+    <h6 class="title" style="color: black; margin-top: 24px;">Sports & Hobbies</h6>
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="#" style="color: #002f34;">Books & Magazines</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Musical Instruments</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Sport Equipment</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Gym & Fitness</a></li>
+    </ul>
+    <h6 class="title" style="color: black; margin-top: 24px;">Kids</h6>
+    <ul class="menu-col" style="padding-left: 19px">
+      <li class="nav-item"><a href="#" style="color: #002f34;">Toys</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Swing & Slides</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Kids Assessories</a></li>
+      <li class="nav-item"><a href="#" style="color: #002f34;">Kids Furniture</a></li>
+    </ul>
+  </div>
+</div><!-- end col-3 -->
+</div><!-- end row -->
+</li>
+</ul>
+<li class="nav-item">
+  <a class="nav-link" href="#">Mobile Phones</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Cars</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Motorcycles</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Houses</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">TV - Video - Audio</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Tablets</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">Land & Plots</a>
+</li>
+</ul>
+</nav>
+</div>
+
+
+
+     <div class="row" style="margin:0px;">
+
+      <div class="col-md-8 changeAlign">
+        <div class="card ml-5 changeAlign">
+        <div class="card-body addimage" style="height: 450px;">
+        </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 changeAlign">
+        <div class="card mr-5 changeAlign">
+          <div class="card-body">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
+
+          </div>
+            <h3>Rs 16000.0</h3>
+            <p>8 story flat</p>
+            <p><small class="float-left">Pakistan</small></p>
+            <p><small class="float-right">9 days ago</small></p>
+          </div>
+        </div>
+        <div class="card mr-5 mt-3 changeAlign">
+          <div class="card-body">
+            <h4>Seller Discription</h4>
+            <div>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://cdn.xxl.thumbs.canstockphoto.com/3d-small-people-call-me-3d-small-person-standing-next-to-a-large-handset-3d-image-isolated-white-clipart_csp12712612.jpg" class="rounded-circle mx-auto" width="80" height="80">
+            <h6><b>Caller Name</b></h6>
+            <secondary> Number since Mar 2021</secondary>
+            </div>
+            <button class="btn bg-dark text-white mt-4" style="width: 100%"><b> Chat with seller</b></button>
+            <div class="mt-4 mx-auto">
+
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+              <span>** *** ***</span>
+              <a href="#"> show number</a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="row" style="margin:0px;">
+      <div class="col-md-8 changeAlign">
+        <div class="card ml-5 changeAlign">
+          <div class="card-header">
+            <h4 class="p-2">Details</h4>
+            <p class="p-2">Price &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp16000.0</p>
+            <p class="p-2">Condition &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspgood</p>
+
+          </div>
+        <div class="card-body">
+            <h4>Discription</h4>
+            <p>At a very good location</p>
+        </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 changeAlign">
+        <div class="card mr-5 mt-3 changeAlign">
+          <div class="card-header p-4 ">
+            <h4>Posted in</h4>
+            <small>Pakistan</small>    <!-- change Address-->
+          </div>
+          <div class="card-body">
+            <img src="https://www.online-tech-tips.com/wp-content/uploads/2020/04/Google-Maps-Desktop-Location-Pin.png" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+
+
+     </div>
+     <!-- App download section -->
+     <div class="container-xl">
+       <div class="row">
+         <div class="col-md-5 col-sm-6">
+           <img src="https://www.olx.com.pk/assets/olxMobileApp.4f5c782de5b951f7b49a8d2729313206.jpg" class="img-fluid" alt="">
+         </div>
+         <div class="col-md-3 app-text" style="text-aling:center;">
+           <div class="row p-2">
+             <h2><b>Try the OLX app</b></h2>
+           </div>
+           <div class="row p-2">
+             <h5>Buy, sell and find just about anything using the app on your mobile.</h5>
+           </div>
+         </div>
+         <div class="col-md-4 col-sm-6" style="text-align:center;">
+           <div class="row" style="margin-top:85px;">
+             <div class="col-6">
+               <a href="#"><img src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" alt="">
+               </a>
+             </div>
+             <div class="col-6">
+               <a href="#"><img src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" alt="">
+               </a>
+             </div>
+
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- footer section -->
+     <div class="container-fluid" style="padding: 0px;background-color: #ebeeef;border-top: 1px solid rgba(0,47,52,.2);">
+       <div class="container-xxl footerBar" style="display: flex;padding: 15px;justify-content: space-between;">
+         <section style="box-flex: 1; flex: 1;">
+           <ul class="" style="list-style-type:none;">
+             <span style="font-weight: 700; text-transform: uppercase; font-size: 14px;">Popular Categories
+             </span>
+             <li style="margin-top: 10px;">
+               Cars
+             </li>
+             <li>
+               Flats for rent
+             </li>
+             <li>
+               Mobile Phones
+             </li>
+             <li>
+               Jobs
+             </li>
+           </ul>
+         </section>
+         <section style="box-flex: 1; flex: 1;">
+           <ul class="" style="list-style-type:none;">
+             <span style="  font-weight: 700; text-transform: uppercase; font-size: 14px;">Trending Searches</span>
+             <li style="margin-top: 10px;">
+               Bikes
+             </li>
+             <li>
+               Watches
+             </li>
+             <li>
+               Books
+             </li>
+             <li>
+               Dogs
+             </li>
+           </ul>
+         </section>
+         <section style="box-flex: 1; flex: 1;">
+           <ul class="" style="list-style-type:none;">
+             <span style="font-weight: 700; text-transform: uppercase; font-size: 14px; ">About Us</span>
+             <li style="margin-top: 10px;">
+               About EMPG
+             </li>
+             <li>
+               OLX Blog
+             </li>
+             <li>
+               Contact Us
+             </li>
+             <li>
+               OLX for Businesses
+             </li>
+           </ul>
+         </section>
+
+         <section style="box-flex: 1; flex: 1;">
+           <ul class="" style="list-style-type:none;">
+             <span style="font-weight: 700; text-transform: uppercase; font-size: 14px;">olx</span>
+             <li style="margin-top: 10px;">
+               <span>Help</span>
+             </li>
+             <li>
+               <span>Sitemap</span>
+             </li>
+             <li>
+               Legal and Privacy information
+             </li>
+           </ul>
+         </section>
+         <section style=" flex: 1;">
+           <span style="  font-weight: 700; text-transform: uppercase; font-size: 14px;">Follow us</span>
+           <div>
+             <a href="#" style="display:inline-block"><img src="https://www.olx.com.pk/assets/iconTwitter_noinline.6037fa7d9a7b9d6408fb1b3d70524b97.svg" style="height: 2.4rem; width: 2.4rem"></a>
+             <a href="#" style="display:inline-block"><img src="https://www.olx.com.pk/assets/iconYoutube_noinline.c85bd6801ec83d6a3b498059550bef26.svg" style="height: 2.4rem; width: 2.4rem">
+             </a>
+             <a href="#" style="display:inline-block"> <img src="https://www.olx.com.pk/assets/iconFacebook_noinline.773db88c5b9ee5aaab365e61cdb750da.svg" style="height: 2.4rem; width: 2.4rem">
+             </a>
+             <a href="#" style="display:inline-block"><img src="https://www.olx.com.pk/assets/iconInstagram_noinline.d7d5811ebc44e03a674c8d0b5ff3f232.svg" style="height: 2.4rem; width: 2.4rem"></a>
+
+           </div>
+           <div class="row">
+             <a href="#" class="col" style="display:inline-block"> <img src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" style="height: 6rem; width: 6rem" class="img-fluid">
+             </a>
+             <a href="#" class="col" style="display:inline-block"> <img src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" style="height: 6rem; width: 6rem" class="img-fluid"></a>
+           </div>
+
+         </section>
+       </div>
+       <div class="container-fluid" style="background-color: #002f34;margin: 0px;">
+         <div class="container-xxl" style=" color: #fff; text-align: right; padding: 10px; font-size:13px;">
+           <b><span style="margin-right:6px">Free Classifieds in Pakistan</span></b>
+           .© 2006-2021 OLX
+         </div>
+       </div>
+     </div>
+
+
+
+
+     <script type="text/javascript">
+       function changeText(id) {
+         var arrow = document.querySelector("#droparrow");
+         arrow.classList.toggle("flip");
+       }
+
+       function changeRotateCategory(id) {
+         var arrow = document.querySelector("#droparrowcategory");
+         arrow.classList.toggle("flip");
+       }
+     </script>
+
+     <script integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+     <!-- Option 1: Bootstrap 5 Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   </body>
+
+   </html>
